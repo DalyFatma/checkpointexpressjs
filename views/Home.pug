@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/styles.css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+  link(integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  title Home
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
+  a.navbar-brand.brandTitle(href='/') WebService
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup')
+    | aria-controls=&quot;navbarNavAltMarkup&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+    span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse
+    .navbar-nav.navb
+      a.nav-item.nav-link.active(href='/')
+        | Home 
+        span.sr-only (current)
+      a.nav-item.nav-link(href='/Our-Services') Services
+      a.nav-item.nav-link(href='/Contact-us') Contact
+section
+  header
+    h1 Welcome To WebService
+  img(src='/images/hero.png' alt='img')
+  h2 Better Solutions For Your Business
+  p We are team of talented designers making websites
+footer#footer
+  .footer-newsletter
+    .container
+      .row.justify-content-center
+        .col-lg-6
+          h4 Join Our Newsletter
+          p
+            | Join our newsletter to get more informations!
+          form(action='' method='post')
+            input(type='email' name='email')
+            input(type='submit' value='Subscribe')
+  .container.footer-bottom.clearfix
+    .copyright
+      | &copy; Copyright 
+      strong
+        span WebService
+      | . All Rights Reserved
+    .credits
+      | Designed by 
+      a(href='https://bootstrapmade.com/') BootstrapMade
